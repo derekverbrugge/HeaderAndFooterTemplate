@@ -5,38 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f7fb;
-      color: #172033;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      min-height: 60vh;
-    }
-
-    h1 {
-      font-size: 42px;
-    }
-
-    a {
-      color: inherit;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div id="header"></div>
 
-  <main>
-    <h1>Welcome to my website</h1>
-    <p>This is a simple static website hosted on GitHub Pages.</p>
-    <p>The header and footer are loaded using JavaScript.</p>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">WELCOME</p>
+      <h1>Welcome to my website</h1>
+      <p>
+        This is a simple static website hosted on GitHub Pages.
+        The header and footer are loaded using JavaScript.
+      </p>
+      <a class="button" href="about.html">Learn more</a>
+    </section>
+
+    <section class="info-grid">
+      <article class="card">
+        <h2>Mobile friendly</h2>
+        <p>The layout adapts to phones, tablets, and desktop screens.</p>
+      </article>
+
+      <article class="card">
+        <h2>Simple hosting</h2>
+        <p>HTML, CSS, and JavaScript work directly on GitHub Pages.</p>
+      </article>
+    </section>
   </main>
 
   <div id="footer"></div>
