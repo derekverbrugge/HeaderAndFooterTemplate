@@ -1,42 +1,143 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!--
+    Makes the page display correctly on phones and tablets.
+
+    Without this, mobile browsers may render the page as if
+    it were a much wider desktop page.
+  -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Simple JS Site | Home</title>
+
+  <!--
+    One stylesheet controls the appearance of the entire site.
+  -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!--
+    defer is important.
+
+    It tells the browser:
+
+      "Download this JavaScript now, but don't execute it
+       until the HTML document has been parsed."
+
+    This means our #site-header and #site-footer elements
+    already exist when site.js runs.
+  -->
+  <script src="js/site.js" defer></script>
 </head>
+
 <body>
 
-  <div id="header"></div>
+  <!--
+    =========================================================
+    SHARED HEADER
+    =========================================================
 
-  <main class="container">
+    This div is intentionally empty.
+
+    site.js will fetch header.html and put its contents here.
+  -->
+  <div id="site-header"></div>
+
+
+  <!--
+    =========================================================
+    PAGE-SPECIFIC CONTENT
+    =========================================================
+
+    Everything between the header and footer belongs only
+    to this particular page.
+  -->
+  <main>
+
     <section class="hero">
-      <p class="eyebrow">WELCOME</p>
-      <h1>Welcome to my website</h1>
-      <p>
-        This is a simple static website hosted on GitHub Pages.
-        The header and footer are loaded using JavaScript.
-      </p>
-      <a class="button" href="about.html">Learn more</a>
+      <div class="container">
+
+        <p class="eyebrow">Simple JavaScript Demo</p>
+
+        <h1>
+          Build simple websites
+          without unnecessary complexity.
+        </h1>
+
+        <p class="hero-text">
+          This website uses ordinary HTML, CSS, and a small
+          amount of JavaScript to create reusable headers
+          and footers.
+        </p>
+
+        <a class="button" href="about.html">
+          Learn how it works
+        </a>
+
+      </div>
     </section>
 
-    <section class="info-grid">
-      <article class="card">
-        <h2>Mobile friendly</h2>
-        <p>The layout adapts to phones, tablets, and desktop screens.</p>
-      </article>
 
-      <article class="card">
-        <h2>Simple hosting</h2>
-        <p>HTML, CSS, and JavaScript work directly on GitHub Pages.</p>
-      </article>
+    <section class="section">
+      <div class="container">
+
+        <h2>What makes this simple?</h2>
+
+        <div class="card-grid">
+
+          <article class="card">
+            <h3>Plain HTML</h3>
+
+            <p>
+              Each page is ordinary HTML. There is no framework
+              and no special templating language.
+            </p>
+          </article>
+
+
+          <article class="card">
+            <h3>Small JavaScript</h3>
+
+            <p>
+              JavaScript has one primary job: load reusable
+              pieces of HTML and add only the behavior we need.
+            </p>
+          </article>
+
+
+          <article class="card">
+            <h3>Shared CSS</h3>
+
+            <p>
+              One stylesheet controls the appearance of every
+              page.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
     </section>
+
   </main>
 
-  <div id="footer"></div>
 
-  <script src="script.js"></script>
+  <!--
+    =========================================================
+    SHARED FOOTER
+    =========================================================
+
+    Like the header, this starts empty.
+
+    site.js will insert footer.html here.
+  -->
+  <div id="site-footer"></div>
+
 </body>
 </html>
