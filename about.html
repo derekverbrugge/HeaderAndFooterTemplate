@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Simple JS Site | About</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!--
+    The exact same JavaScript file is used on every page.
+  -->
+  <script src="js/site.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Shared header gets inserted here. -->
+  <div id="site-header"></div>
+
+
+  <!--
+    =========================================================
+    ABOUT PAGE CONTENT
+    =========================================================
+  -->
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+
+        <p class="eyebrow">About</p>
+
+        <h1>How this site works</h1>
+
+        <p>
+          The header and footer are stored separately so they
+          don't have to be copied into every page.
+        </p>
+
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container narrow">
+
+        <h2>The basic idea</h2>
+
+        <p>
+          Every page contains an empty element with the ID
+          <code>site-header</code>.
+        </p>
+
+        <pre><code>&lt;div id="site-header"&gt;&lt;/div&gt;</code></pre>
+
+        <p>
+          JavaScript finds that element and loads
+          <code>header.html</code> into it.
+        </p>
+
+        <pre><code>loadPartial("site-header", "header.html");</code></pre>
+
+        <p>
+          The footer works exactly the same way.
+        </p>
+
+        <pre><code>loadPartial("site-footer", "footer.html");</code></pre>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Shared footer gets inserted here. -->
+  <div id="site-footer"></div>
+
+</body>
+</html>
