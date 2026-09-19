@@ -1,25 +1,82 @@
-
-
 <header class="site-header">
+
   <div class="container header-inner">
-    <a class="logo" href="index.html">
-      My<span>Website</span>
+
+    <!--
+      Logo / site name.
+
+      This appears on every page because this entire file
+      gets inserted into every page.
+    -->
+    <a href="index.html" class="logo">
+      Simple<span>Site</span>
     </a>
 
+
+    <!--
+      =======================================================
+      MOBILE MENU BUTTON
+      =======================================================
+
+      This button is only displayed on smaller screens.
+
+      aria-expanded tells assistive technology whether the
+      navigation is currently open.
+
+      JavaScript changes it between:
+
+        false
+        true
+    -->
     <button
       class="menu-toggle"
       type="button"
       aria-expanded="false"
-      aria-controls="main-navigation"
-      aria-label="Open navigation"
+      aria-controls="site-navigation"
     >
-      ☰
+
+      <!--
+        These three spans create the hamburger icon.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+        This text is visually hidden but available to
+        screen readers.
+      -->
+      <span class="sr-only">
+        Toggle navigation
+      </span>
+
     </button>
+
+
+    <!--
+      =======================================================
+      NAVIGATION
+      =======================================================
+
+      The ID is important.
+
+      site.js uses #site-navigation to find this element
+      after header.html has been inserted.
+    -->
+    <nav
+      id="site-navigation"
+      class="nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
   </div>
 
-  <nav class="site-nav container" id="main-navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
 </header>
