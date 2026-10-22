@@ -481,3 +481,6 @@ pre code {
   }
 
 }
+
+/* Keep the bottom overscroll area the same color as the footer. */
+html { background-color: var(--surface); }
