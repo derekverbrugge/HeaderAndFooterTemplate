@@ -484,3 +484,6 @@ pre code {
 
 /* Keep the bottom overscroll area the same color as the footer. */
 html { background-color: var(--surface); }
+
+/* Shared website standards */
+a,a:visited,a:hover,a:active,a:focus{text-decoration:none!important}body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}#site-footer{margin-top:auto}.footer-links{display:flex;flex-wrap:wrap;gap:1rem}.template-credit{font-size:.75rem;text-align:center}
