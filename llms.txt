@@ -1,0 +1,7 @@
+# HeaderAndFooterTemplate
+
+- [Simple JS Site | About](https://derekverbrugge.github.io/HeaderAndFooterTemplate/about.html)
+- [Simple JS Site | Contact](https://derekverbrugge.github.io/HeaderAndFooterTemplate/contact.html)
+- [Simple JS Site | Home](https://derekverbrugge.github.io/HeaderAndFooterTemplate/)
+
+[Full text](https://derekverbrugge.github.io/HeaderAndFooterTemplate/llms-full.txt)

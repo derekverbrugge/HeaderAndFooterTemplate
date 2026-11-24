@@ -1,0 +1,51 @@
+# HeaderAndFooterTemplate
+
+## Simple JS Site | About
+Source: https://derekverbrugge.github.io/HeaderAndFooterTemplate/about.html
+
+About
+How this site works
+The header and footer are stored separately so they
+don't have to be copied into every page.
+The basic idea
+Every page contains an empty element with the ID
+site-header .
+<div id="site-header"></div>
+JavaScript finds that element and loads
+header.html into it.
+loadPartial("site-header", "header.html");
+The footer works exactly the same way.
+loadPartial("site-footer", "footer.html");
+
+## Simple JS Site | Contact
+Source: https://derekverbrugge.github.io/HeaderAndFooterTemplate/contact.html
+
+Contact
+Get in touch
+This content belongs specifically to contact.html.
+Contact information
+Email:
+hello@example.com
+Phone:
+(555) 555-5555
+
+## Simple JS Site | Home
+Source: https://derekverbrugge.github.io/HeaderAndFooterTemplate/
+
+Simple JavaScript Demo
+Build simple websites
+without unnecessary complexity.
+This website uses ordinary HTML, CSS, and a small
+amount of JavaScript to create reusable headers
+and footers.
+Learn how it works
+What makes this simple?
+Plain HTML
+Each page is ordinary HTML. There is no framework
+and no special templating language.
+Small JavaScript
+JavaScript has one primary job: load reusable
+pieces of HTML and add only the behavior we need.
+Shared CSS
+One stylesheet controls the appearance of every
+page.
